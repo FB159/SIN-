@@ -1,0 +1,74 @@
+
+.Mon_Bouton {
+	background-color:#ff0000;
+	border-radius:14px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	font-style:italic;
+	padding:19px 23px;
+	text-decoration:none;
+}
+.Mon_Bouton:hover {
+	background-color:#bd2a2a;
+}
+.Mon_Bouton:active {
+	position:relative;
+	top:1px;
+}
+
+
+body{
+background-image: url("fond noir.jpg");
+}
+h1{
+	color: white;
+}
+h2{
+	color: grey;
+}
+
+p{
+	color: grey;
+	font-family:Verdana, Arial, Geneva;
+	font-size:medium;
+}
+
+
+.mise_en-page {
+  display: grid; 
+  grid-template-columns: 450px 450px 450px; 
+  grid-template-rows: 54.8px 195.2px 200px 200px 75px; 
+  gap: 6px 0px; 
+  grid-template-areas: 
+    "Titre_Film Titre_Film Titre_Film"
+    "vide Image_film vide1"
+    "Image2_film résumé_film résumé_film"
+    "Image3_film résumé_film résumé_film"
+    "lien_video vide2 vide2"; 
+}
+
+.Image2_film { grid-area: Image2_film;
+ }
+
+.Image3_film { grid-area: Image3_film; }
+
+.lien_video { grid-area: lien_video;}
+
+.Titre_Film { grid-area: Titre_Film; }
+
+.Image_film { grid-area: Image_film; }
+
+.vide { grid-area: vide; }
+
+.vide1 { grid-area: vide1; }
+
+.résumé_film { grid-area: résumé_film; }
+
+
+.Image5_film { grid-area: Image5_film; }
+
+.vide2 { grid-area: vide2; }
